@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("input#Send").click(function(){
+				var url="test.php";
+        var dataSet={ name: $("input#name").val(), email: $("input#email").val() }; // 
+        $.post(url,dataSet,function(data){
+        	alert("แจ้งเเมื่อทำการส่งข้อมูลเรียบร้อยแล้ว");
+        });
+    });
+		});
+	</script>
+</head>
+<body>
+	<form id="form1" name="form1" method="post" action="">
+		<p>ชื่อ
+			<input type="text" name="name" id="name" />
+			<br />
+			อีเมลล์
+			<input type="text" name="email" id="email" />
+			<br />
+			<input type="button" name="Send" id="Send" value="Send" />
+		</p>
+	</form>
+</body>
+</html>

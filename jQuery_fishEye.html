@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css"> 
+        img{
+            border:0;
+        }
+        ul#eyefish{ 
+            margin:0;padding:0;
+            margin-left:100px;
+            display:block;
+            height:100px;
+        }
+        ul#eyefish li{ 
+            list-style:none outside;
+            float:left;
+        }
+        ul#eyefish li a img{ 
+            width:85px;
+            height:71px;
+        }
+    </style>
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <script type="text/javascript"> 
+        $(function(){
+            $("ul#eyefish li a img").hover(function(){ 
+                $(this).animate({
+                    width:120,
+                    height:100
+                },300);
+            },function(){ 
+                $(this).animate({ 
+                    width:85,
+                    height:71
+                },300); 
+            });
+        });
+    </script>
+</head>
+<body>
+    <ul id="eyefish">
+        <li><a href="#"><img src="images/calendar.png" /></a></li>
+        <li><a href="#"><img src="images/email.png" /></a></li>
+        <li><a href="#"><img src="images/history.png" /></a></li>
+        <li><a href="#"><img src="images/home.png" /></a></li>
+        <li><a href="#"><img src="images/music.png" /></a></li>
+        <li><a href="#"><img src="images/portfolio.png" /></a></li>
+        <li><a href="#"><img src="images/video.png" /></a></li>
+    </ul>
+</body>
+</html>

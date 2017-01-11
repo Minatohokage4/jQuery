@@ -1,0 +1,49 @@
+<html>
+<script type="text/javascript" src="jquery-3.1.1.js"></script>
+<script>
+	/*
+
+	$(document).ready(function ()
+	{
+		$('ul > li').css('color','#f00');
+	});
+
+
+	/* ANONYMOUSE FUNCTION
+
+	$(document).ready(function ()
+	{
+		$('ul > li').css('color','#7FFF00');
+	});
+	
+	TEST COLOR MORE 
+
+	function function_name() {
+		$('ul > li').css('color','#7FFF00');
+	}
+	$(document).ready(function_name);
+	*/
+
+	//  REDUCE  CODE 
+	//BECOUSE  USE FUCNTION WORKING ON LOAD ALL DOCUMENT 
+	$(function(){
+		$('ul > li').css('color','#f00');        
+	});
+
+	/*MEMO
+		Windows => behavior
+		Document => Conten
+
+	$(document).ready()  ->  code working  when load html document success all then javascript working 
+	 !! wrong dont wait picture load  and other 
+	$(window).load();	-> load all success wait picture and other loading  then javascript working
+
+</script>
+
+<ul>
+	<li>โมโมหมายเลข1</li>
+	<li>โมโมหมายเลข2</li>
+	<li>โมโมหมายเลข3</li>
+</ul>
+</html>  
+

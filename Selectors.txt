@@ -1,0 +1,12 @@
+Selectors
+$(this).action()
+ 	element present
+
+$("#test").action()
+	id="test"
+
+$("p").action()
+	<div> or  <span>
+
+$(".test").action()
+	class="test"
